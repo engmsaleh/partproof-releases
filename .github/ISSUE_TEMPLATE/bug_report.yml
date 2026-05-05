@@ -1,99 +1,37 @@
 name: Bug report
-description: PartProof did something unexpected — model failed, addin crashed, install broke, etc.
+description: PartProof did something unexpected
 title: "[BUG] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for filing a bug report!
+        Thanks for reporting!
 
-        Discord (the tester channel) is usually faster for active beta
-        participants — ping there if it's blocking your work today.
+        **The fastest way to file this:** click *Report Bug* inside the
+        PartProof task pane in SOLIDWORKS — it auto-fills your version,
+        channel, SOLIDWORKS version, and OS into the form. You only have
+        to write what happened.
 
-        **Privacy reminder:** GitHub issues are public. If you attach a
-        diagnostic bundle, redact file paths, transcripts, and CAD
-        parameter values you don't want in a public archive.
-
-  - type: input
-    id: version
-    attributes:
-      label: PartProof version
-      description: Look in Diagnostics dialog → "Build version" or in `apps/build-info.json`.
-      placeholder: e.g. 0.2.0-beta.24
-    validations:
-      required: true
-
-  - type: dropdown
-    id: channel
-    attributes:
-      label: Channel
-      options:
-        - stable
-        - beta
-        - dev
-    validations:
-      required: true
-
-  - type: input
-    id: solidworks
-    attributes:
-      label: SOLIDWORKS version
-      placeholder: e.g. 2024 SP5
-    validations:
-      required: true
-
-  - type: input
-    id: os
-    attributes:
-      label: OS
-      placeholder: e.g. Windows 11 23H2
-    validations:
-      required: true
-
-  - type: dropdown
-    id: engine
-    attributes:
-      label: AI engine in use when the bug occurred
-      options:
-        - Codex
-        - Claude Code
-        - "Not applicable / unknown"
-    validations:
-      required: true
+        **Privacy reminder:** GitHub issues are public. If you paste a
+        diagnostic bundle from the addin's *Copy Bundle* button, redact
+        anything you wouldn't want public (file paths, transcripts, CAD
+        parameter values).
 
   - type: textarea
-    id: what_happened
+    id: description
     attributes:
-      label: What happened?
-      description: What were you trying to do? What did you see instead of the expected result?
-    validations:
-      required: true
-
-  - type: textarea
-    id: reproduction
-    attributes:
-      label: Steps to reproduce
-      description: Numbered list. The minimum sequence that produces the bug. Include the prompt you sent if it was an AI session.
-      placeholder: |
-        1. Open SW, create a new part
-        2. Type the prompt: "..."
-        3. ...
-    validations:
-      required: true
-
-  - type: textarea
-    id: logs
-    attributes:
-      label: Diagnostic bundle / logs
+      label: Description
       description: |
-        Optional. If you have a diagnostic bundle from the addin's
-        Diagnostics dialog, attach it here (drag-and-drop the .zip).
-        Redact private content first — see privacy note in README.
-        Or paste the last 30 lines of the addin log if shorter.
+        Describe what you were trying to do, what you saw, and how we can reproduce it.
+        Include any screenshots, prompts, or addin log lines that might help.
+      placeholder: |
+        Replace this with the actual description.
 
-  - type: textarea
-    id: extra
-    attributes:
-      label: Anything else
-      description: Workarounds you tried, related bugs, links, screenshots.
+        **What I was trying to do:**
+
+        **What happened instead:**
+
+        **How to reproduce (if you can):**
+    validations:
+      required: true
