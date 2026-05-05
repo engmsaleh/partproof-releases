@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Local-only artifacts; release MSIs live as GitHub Release assets, not in-tree.
+*.msi
+*.zip
+*.wixpdb

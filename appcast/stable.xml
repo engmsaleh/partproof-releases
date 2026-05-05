@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>PartProof Copilot — Stable channel</title>
+    <link>https://github.com/engmsaleh/partproof-releases</link>
+    <description>Auto-update feed for the PartProof Copilot stable channel. See README.md for installation instructions and channel scope.</description>
+    <language>en</language>
+
+    <!--
+      Per-release <item> entries are appended here by CI on tag push.
+      Stable releases follow tag pattern v0.X.Y (no pre-release suffix).
+
+      Phase 0 (current): empty placeholder. PartProof has not had a
+      stable GA release yet — beta channel is the active tester
+      cohort. First stable entry lands when the maintainer cuts a v0.X.Y
+      tag from the beta branch.
+    -->
+  </channel>
+</rss>

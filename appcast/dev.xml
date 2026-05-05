@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>PartProof Copilot — Dev channel</title>
+    <link>https://github.com/engmsaleh/partproof-releases</link>
+    <description>Dev-channel feed. INTENTIONALLY EMPTY — dev installs are maintainer-local and rebuild from private source. PartProof.Chat.exe disables auto-update polling on the dev channel via compile-time flag (AutoUpdateEnabled=false in CopilotAddIn.cs).</description>
+    <language>en</language>
+
+    <!--
+      This file exists as a defensive 200 OK target so a misbuilt dev
+      exe that accidentally polls doesn't 404-spam the addin log.
+      Phase 0 commitment: this feed STAYS EMPTY for the foreseeable
+      future. Dev work lives in the private source repo.
+    -->
+  </channel>
+</rss>
