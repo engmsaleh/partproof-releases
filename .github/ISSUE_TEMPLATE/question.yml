@@ -1,0 +1,31 @@
+name: Question / how-do-I
+description: You're not sure if something is a bug, or you want to understand how a feature works.
+title: "[Q] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For active testers: Discord is usually faster. This template is
+        for users who prefer GitHub for searchable, archived Q&A.
+
+  - type: input
+    id: version
+    attributes:
+      label: PartProof version
+      placeholder: e.g. 0.2.0-beta.24
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: What you've already tried
+      description: Documentation you've read, prompts you've tried, etc.

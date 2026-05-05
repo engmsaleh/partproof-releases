@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>PartProof Copilot — Beta channel</title>
+    <link>https://github.com/engmsaleh/partproof-releases</link>
+    <description>Auto-update feed for the PartProof Copilot beta channel. See README.md for installation instructions and channel scope.</description>
+    <language>en</language>
+
+    <!--
+      Per-release <item> entries are appended here by CI on tag push.
+      Each entry includes <sparkle:version>, an enclosure URL pointing
+      at the matching MSI in this repo's Releases tab, and an Ed25519
+      signature once Phase 2 (auto-update) ships.
+
+      The most recent release listed is the one PartProof's NetSparkle
+      client offers when it polls this feed.
+
+      Phase 0 (current): empty placeholder. Manual <item> additions
+      land in Phase 2 alongside NetSparkle integration.
+    -->
+  </channel>
+</rss>

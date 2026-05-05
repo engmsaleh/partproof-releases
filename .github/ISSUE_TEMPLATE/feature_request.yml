@@ -1,0 +1,43 @@
+name: Feature request
+description: A capability you'd want added, or an existing tool you'd want changed.
+title: "[FEAT] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! Both rough wishes and concrete proposals
+        are welcome — better to file an early sketch than not file at all.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: What were you trying to do that PartProof didn't handle well, or didn't handle at all?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would the feature look like?
+      description: |
+        A new tool? A change to an existing tool? A change to the
+        chat UI? Be as concrete or as vague as you like.
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example prompt or workflow
+      description: |
+        If this is an AI-driven feature, what's a prompt you'd want
+        to be able to type? If it's a UI feature, where in the app
+        would you click it?
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Workarounds you've tried
+      description: How are you currently doing this without the feature?

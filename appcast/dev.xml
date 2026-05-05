@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>PartProof Copilot — Dev channel</title>
+    <link>https://github.com/engmsaleh/partproof-releases</link>
+    <description>Dev-channel feed. INTENTIONALLY EMPTY — auto-update polling is disabled on dev installs at compile time. This file exists only as a defensive 200 OK response so a misbuilt dev exe does not 404-spam its own log.</description>
+    <language>en</language>
+  </channel>
+</rss>
